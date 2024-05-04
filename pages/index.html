@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../src/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/desktop.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator app</title>
+</head>
+<body>
+    <h2 id="title">SPLI<br>TTER</h2>
+    <div class='main'>
+        <form id="form" id="submit">
+
+            <div class="bill">
+                <label for ="bill" name="bill" >Bill</label>
+                <p class="err" id="err">Add an amount to the bill </p>
+                <input class="input"  placeholder="0" type="number" id="bill">
+                <img id="dolar-img"src="../images/icon-dollar.svg">
+
+            </div>
+
+            <div class="select">
+                <label for="tip" name="tip" id="tip">Select Tip %</label>
+                
+                <button class="button"value ="5" onclick=" validar()"type="button">
+                    5%
+                </button>
+                <button class="button" value ="10" onclick="validar()" type="button"  type="button">
+                    10%
+                </button>
+                <button class="button" value ="15" onclick="validar()" type="button" type="button">
+                    15%
+                </button>
+                <button class="button" value ="25" onclick="validar()" type="button" type="button">
+                    25%
+                </button>
+                <button class="button" value ="50" onclick="validar()" type="button" type="button">
+                    50%
+                </button>
+                <input type="number" id ='custom' class="button" placeholder="Custom">
+                    
+            </div>
+            <div class="people">
+                <label for="people" id="people" type="people">Number of People</label>
+                <p class="err" id="err2">Can't be zero</p>
+                <input class="input" placeholder="0" type="number" id="person">
+                <img  id='person-img'src="../images/icon-person.svg">
+
+            </div>
+        </form>
+        
+        <div class="result">
+            <div class="results">
+                <p>Tip Aumont</p>
+                <p id="min">/ person</p>
+            </div>
+            <div class="right">
+                <h1>$0.00</h1>
+            </div>
+
+            <br><br>
+            <div class="results">
+                <p>Total</p>
+                <p id="min">/ person</p>
+            </div>
+            <div class="right">
+                <h1 id="total">$0.00</h1>
+            </div>
+            <div class="reset" onclick="validarReset()">
+                <button  class="twist" id="reset" >RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

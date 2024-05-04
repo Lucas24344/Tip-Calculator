@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background:hsl(185, 41%, 84%);
+        font-family: "Space Mono", monospace;
+        color:hsl(183, 100%, 15%);
+        font-weight: bolder;
+    }
+
+    #title{
+        text-align:center;
+        margin-top:3%;
+    }
+    .main{
+        background-color: white;
+        padding:30px;
+        border-radius:20px;
+
+    }
+
+    .input::placeholder{
+        color:hsla(186, 14%, 43%, 0.664)
+    }
+    .result{
+        color:white;
+        background-color:hsl(183, 100%, 15%) ;
+        min-width:230px;;
+        height:280px;
+        border-radius: 20px;
+        padding-top:45px;
+        padding:35px;
+
+    }
+    .select{
+        width: 100%;
+        margin-bottom:25px;
+    }
+    .button{
+        border-color: transparent;
+        font-family: "Space Mono", monospace;
+        margin-top:10px;
+        background-color:hsl(183, 100%, 15%) ;
+        color:rgb(228, 225, 225);
+        font-weight:bold;
+        padding:5px;
+        height: 40px;
+        border-radius:5px;
+        font-size:17px; 
+    }
+
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+    input:focus{
+        outline:none
+    }
+    .button:hover{
+        background-color:hsla(172, 74%, 60%, 0.459);
+        color:hsl(183, 100%, 15%)
+    }
+
+    .bill{
+        margin-bottom:25px;
+        position:relative;
+    }
+    #tip{
+        display: block;
+        width:100%
+    }
+    label{
+        display: relative;
+        font-weight: normal;
+        width:70px
+    }
+    #custom{
+        height: 32px;
+        background-color:hsl(180, 33%, 92%);
+        color:hsl(186, 14%, 43%);
+        border:none;
+        width:100px;
+    }
+    .people{
+        position: relative;
+    }
+    #person-img{
+        position: absolute;
+        bottom:20px;
+        left:10px
+    }
+    #dolar-img{
+        position:absolute;
+        left:10px;
+        bottom:20px;
+    }
+    .results{
+
+        height:20px;
+        width:40%;
+
+
+    }
+    .right{
+        color:hsl(172, 67%, 45%);
+        float:right;
+        margin-top:-25px;
+
+
+    }
+    #min{
+        font-size: small;
+        color:hsla(0, 0%, 95%, 0.438)
+    }
+
+    #reset{
+        margin-top:143px;
+        font-family: "Space Mono", monospace;
+        background-color:hsla(172, 67%, 45%, 0.514);
+        color:hsla(183, 100%, 15%, 0.493);
+        font-weight:bold;
+        padding:10px;
+        width:100%;
+        margin-top:120px;
+        border-radius:5px;
+    }
+    #custom::placeholder{
+        text-align: center;
+        padding-left:10px
+    }
+    
+    .input:hover{  
+        border:0.1px solid hsl(172, 70%, 45%)
+    }
+
+    .err{
+        color:rgba(255, 0, 0, 0.596);
+        float:right;
+        font-size:12px;
+        margin-top:5px;
+        display:none
+    }
