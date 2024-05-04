@@ -8,8 +8,8 @@
         transform: translate(-50%, -50%);
     }
     .result{
-
         float:right;
+        width: 280px;
     }
     #form{
         width:47%;
@@ -19,7 +19,7 @@
         font-size:18px;
         font-weight: bold;
         color:hsl(184, 14%, 56%);
-        text-indent:93%;
+        text-indent:70%;
         font-family: "Space Mono", monospace;
         margin:10px 10px 10px 0px;
         width:100%; 
@@ -31,5 +31,4 @@
     .button{
         width:109.8px;
     }
-
 }

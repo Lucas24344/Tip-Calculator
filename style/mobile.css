@@ -5,26 +5,13 @@
         margin-top:50px;
     }
     .result{
-
+        width:270px;
         clear:both;
         margin-top:20px;
         width:10%
     }
-    .input{
-        font-size:18px;
-        font-weight: bold;
-        color:hsl(184, 14%, 56%);
-        text-indent:93%;
-        font-family: "Space Mono", monospace;
-        margin:10px 10px 10px 0px;
-        width:100%; 
-        border:none;
-        background-color:hsl(180, 33%, 92%);
-        border-radius:5px;
-        height:40px;
-    }
+
     .button{
         width:145px;
-   
     }
 }

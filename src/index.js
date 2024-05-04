@@ -34,9 +34,12 @@ function calc(){
 }
 
 function reset(){
-    location.reload();
-}
-function validarReset(){
+   
+    let bill = document.getElementById("bill").value;
+    let people = document.getElementById("person").value;
+    
 
+    if(bill!=="" && people!==""){
+        location.reload();
+    }
 }
-

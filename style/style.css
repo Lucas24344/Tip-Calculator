@@ -28,7 +28,7 @@
     .result{
         color:white;
         background-color:hsl(183, 100%, 15%) ;
-        min-width:230px;;
+        min-width:230px;
         height:280px;
         border-radius: 20px;
         padding-top:45px;
@@ -64,7 +64,7 @@
     input:focus{
         outline:none
     }
-    .button:hover{
+    .button:active{
         background-color:hsla(172, 74%, 60%, 0.459);
         color:hsl(183, 100%, 15%)
     }
@@ -136,7 +136,19 @@
         text-align: center;
         padding-left:10px
     }
-    
+    .input{
+        font-size:18px;
+        font-weight: bold;
+        color:hsl(184, 14%, 56%);
+        text-indent:90%;
+        font-family: "Space Mono", monospace;
+        margin:10px 10px 10px 0px;
+        width:100%; 
+        border:none;
+        background-color:hsl(180, 33%, 92%);
+        border-radius:5px;
+        height:40px;
+    }
     .input:hover{  
         border:0.1px solid hsl(172, 70%, 45%)
     }
