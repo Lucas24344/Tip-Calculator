@@ -4,6 +4,7 @@
         height: 100%;
         margin-top:50px;
     }
+
     .result{
         width:270px;
         clear:both;
@@ -13,5 +14,8 @@
 
     .button{
         width:145px;
+    }
+    #custom{
+        width:135px;
     }
 }

@@ -16,37 +16,37 @@
         <form id="form" id="submit">
 
             <div class="bill">
-                <label for ="bill" name="bill" >Bill</label>
-                <p class="err" id="err">Add an amount to the bill </p>
+                <label for ="bill" name="bill" >Conta</label>
+                <p class="err" id="err">Adicione um valor a conta </p>
                 <input class="input"  placeholder="0" type="number" id="bill">
                 <img id="dolar-img"src="../images/icon-dollar.svg">
 
             </div>
 
             <div class="select">
-                <label for="tip" name="tip" id="tip">Select Tip %</label>
+                <label for="tip" name="tip" id="tip">Selecione a gorjeta %</label>
                 
-                <button class="button"value ="5" onclick=" validar()"type="button">
+                <button id="aa"class="button"value ="5" onclick=" validar(this)"type="button">
                     5%
                 </button>
-                <button class="button" value ="10" onclick="validar()" type="button"  type="button">
+                <button id="aa" class="button" value ="10" onclick="validar(this)" type="button"  type="button">
                     10%
                 </button>
-                <button class="button" value ="15" onclick="validar()" type="button" type="button">
+                <button id="aa" class="button" value ="15" onclick="validar(this)" type="button" type="button">
                     15%
                 </button>
-                <button class="button" value ="25" onclick="validar()" type="button" type="button">
+                <button id="aa" class="button" value ="25" onclick="validar(this)" type="button" type="button">
                     25%
                 </button>
-                <button class="button" value ="50" onclick="validar()" type="button" type="button">
+                <button id="aa" class="button" value ="50" onclick="validar(this)" type="button" type="button">
                     50%
                 </button>
                 <input type="number" id ='custom' class="button" placeholder="Custom">
                     
             </div>
             <div class="people">
-                <label for="people" id="people" type="people">Number of People</label>
-                <p class="err" id="err2">Can't be zero</p>
+                <label for="people" id="people" type="people">Número de pessoas</label>
+                <p class="err" id="err2">Não pode ser zero</p>
                 <input class="input" placeholder="0" type="number" id="person">
                 <img  id='person-img'src="../images/icon-person.svg">
 
@@ -55,23 +55,23 @@
         
         <div class="result">
             <div class="results">
-                <p>Tip Aumont</p>
-                <p id="min">/ person</p>
+                <p>Gorjeta</p>
+                <p id="min">/ pessoa</p>
             </div>
             <div class="right">
-                <h1>$0.00</h1>
+                <h1 id="amount">$0.00</h1>
             </div>
 
             <br><br>
             <div class="results">
                 <p>Total</p>
-                <p id="min">/ person</p>
+                <p id="min">/ pessoa</p>
             </div>
             <div class="right">
                 <h1 id="total">$0.00</h1>
             </div>
             <div class="reset" >
-                <button onclick="reset()" class="twist" id="reset" >RESET</button>
+                <button onclick="reset()" class="twist" id="reset" >LIMPAR</button>
             </div>
         </div>
     </div>
