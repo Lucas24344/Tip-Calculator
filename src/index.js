@@ -34,10 +34,20 @@ function calc(valor){
     let totalGorjeta = (valorConta * valorGorjeta) /100;
     let sum = valorConta + totalGorjeta;
     let totalPorPessoa=sum/numeroPessoas;
-    amount.innerHTML="$" + totalGorjeta/numeroPessoas.toFixed(2)
+    let totalGorjetaPessoa = totalGorjeta/numeroPessoas;
+    amount.innerHTML="$" + totalGorjetaPessoa.toFixed(2)
     total.innerHTML = "$"+ totalPorPessoa.toFixed(2);
-}
+    colorReset()
 
+
+}
+function colorReset(){
+    if (total != ""){
+        var botao=document.getElementById("reset");
+        botao.style.color="hsl(183, 100%, 15%)";
+        botao.style.backgroundColor="hsl(172, 67%, 45%)";
+    }
+}
 function reset(){
    
     let bill = document.getElementById("bill").value;
